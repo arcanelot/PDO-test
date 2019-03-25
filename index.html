@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>myMusicLibrary</title>
+<meta charset="utf-8">
+</head>
+<body>
+ 
+<h3>My MUSIC Library</h3>
+<table border="2">
+  <td style="width:500px; text-align: center;">
+      <form action="connectMysql.php" method="POST">
+          <input type="submit" value="一覧" style="width:100%;">
+        </form>
+  </td>
+</table>
+
+<h3>データの追加</h3>
+<form action="insertMysql.php" method="POST">
+  ID：<input type="text" name="id">
+  Title:<input type="text" name="title">
+  Artist:<input type="text" name="artist">
+  <input type="submit" value="追加">
+</form>
+
+<h3>データの削除</h3>
+<form action="deleteMysql.php" method="POST">
+  ID：<input type="text" name="id">
+  <input type="submit" value="削除">
+</form>
+ 
+</body>
+</html>
